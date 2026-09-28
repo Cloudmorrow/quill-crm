@@ -1,0 +1,15 @@
+# Every push and pull request: the manifest checks out against the
+# foundational datamodels, and the tests pass — in plain Python, and with
+# quill.py in the sandbox, as a server runs it.
+name: check
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync
+      - run: uv run cm quill check .
+      - run: uv run cm quill test .
+      - run: uv run cm quill test . --sandbox
