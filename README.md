@@ -17,7 +17,7 @@ of deals, and what to do next — shared by everybody who works with them.
 - **Activities**: calls, meetings, emails and to-dos, with when they are
   due, linked to the deal, organisation or person they are about, and
   ticked off when done.
-- **Sales**, the first tab: open deals, what the pipeline is worth (and
+- **Sales**, the first screen: open deals, what the pipeline is worth (and
   worth weighted by each stage's chance), what was won this month, what is
   overdue, what is next and what is closing soon.
 
